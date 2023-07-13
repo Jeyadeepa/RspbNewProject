@@ -72,6 +72,7 @@ namespace RspbNewProject
                 screenshot.SaveAsFile("C:\\Users\\jeyadeepaelamaran\\source\\repos\\RspbNewProject\\RspbNewProject\\Screenshots\\Screenshots.jpeg", ScreenshotImageFormat.Jpeg);
                 Console.WriteLine(e.StackTrace);
                 throw;
+                //Tejasvi
             }
             finally
             {
