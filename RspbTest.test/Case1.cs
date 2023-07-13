@@ -8,5 +8,6 @@ namespace RspbTest.test
 {
     class Case1
     {
+        // Test comment
     }
 }
