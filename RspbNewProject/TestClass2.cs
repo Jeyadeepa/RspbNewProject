@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
-namespace RspbTest.test
+namespace RspbNewProject
 {
-    class Case1
+    class TestClass2
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

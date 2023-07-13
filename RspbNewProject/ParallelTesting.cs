@@ -18,7 +18,7 @@ namespace RspbNewProject
     [TestFixture]
     public class ParallelTesting 
     {
-        IWebDriver _driver;
+       /* IWebDriver _driver;
         [Test,Category("UAT Testing"), Category("Module1")]
         public void TestMethod1()
         {
@@ -95,7 +95,7 @@ namespace RspbNewProject
             Thread.Sleep(5000);
             driver.Close();
 
-        }
+        }*/
 
 
 

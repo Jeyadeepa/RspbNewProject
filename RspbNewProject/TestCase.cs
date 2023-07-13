@@ -28,8 +28,8 @@ namespace RspbNewProject
                 //driver.Url = "https://www.rspb.org.uk/";
                 driver.FindElement(By.CssSelector("body > div.cookie-preferences > div > div:nth-child(2) > div.col-12.col-md-12.col-lg-12.cookie-preferences__default-action-wrapper > div.cookie-preferences__default-action > a")).Click();
                 driver.FindElement(By.XPath("(//*[@class='link--login link'])[1]")).Click();
-                //IWebElement emailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
-                IWebElement emailTextField = driver.FindElement(By.XPath("//*[@id='abcd']"));
+                IWebElement emailTextField = driver.FindElement(By.XPath("//*[@id='email']"));
+                //IWebElement emailTextField = driver.FindElement(By.XPath("//*[@id='abcd']"));
                 emailTextField.SendKeys("jeyadeepa.elamaran@rspb.org.uk");
                 driver.Quit();
             }
@@ -37,7 +37,7 @@ namespace RspbNewProject
             {
                 ITakesScreenshot tr = driver as ITakesScreenshot;
                 Screenshot screenshot = tr.GetScreenshot();
-                screenshot.SaveAsFile("C:\\Users\\jeyadeepaelamaran\\source\\repos\\RspbNewProject\\RspbNewProject\\Screenshots.jpeg", ScreenshotImageFormat.Jpeg);
+                screenshot.SaveAsFile("C:\\Users\\jeyadeepaelamaran\\source\\repos\\RspbNewProject\\RspbNewProject\\Screenshots\\Screenshots.jpeg", ScreenshotImageFormat.Jpeg);
                 Console.WriteLine(e.StackTrace);
                 throw;
             }
