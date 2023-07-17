@@ -145,5 +145,42 @@ namespace RspbNewProject
             }
 
         }
+
+        //Sushma 
+        [Test, Category("Smoke Testing")]
+        public void Feature()
+        {
+            try
+            {
+                IWebElement dropdown = driver.FindElement(By.XPath("//a[normalize-space()='Demo']"));
+                Actions action = new Actions(driver);
+                action.MoveToElement(dropdown).Perform();
+                action.MoveToElement(driver.FindElement(By.XPath("//a[normalize-space()='Feature']"))).Click().Perform();
+                Assert.True(driver.FindElement(By.CssSelector("h1[class='title']")).Text.Contains("Bycatch"));
+                string content = driver.FindElement(By.CssSelector("h1[class='title']")).Text;
+                Assert.IsTrue(content.Contains("Bycatch"));
+                Thread.Sleep(5000);
+                driver.Close();
+            }
+            catch (Exception e)
+            {
+                ITakesScreenshot tr = driver as ITakesScreenshot;
+                Screenshot screenshot = tr.GetScreenshot();
+                screenshot.SaveAsFile("C:\\Users\\sushmanagendranath\\source\\repos\\RspbNewProject\\RspbNewProject\\Screenshots\\Screenshot.jpeg", ScreenshotImageFormat.Jpeg);
+                Console.WriteLine(e.StackTrace);
+                throw;
+            }
+            finally
+            {
+                if (driver != null)
+                {
+                    driver.Quit();
+                }
+            }
+
+        }
+
+
+
     }
 }
