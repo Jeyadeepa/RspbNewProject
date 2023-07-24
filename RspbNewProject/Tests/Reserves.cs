@@ -20,7 +20,7 @@ namespace RspbNewProject
         //private IWebElement dropdown;
 
         [Test, Category("Smoke Testing")]
-        public void VisitAReserve()
+        public void ReserveOverviewPage()
         {
             try
             {
