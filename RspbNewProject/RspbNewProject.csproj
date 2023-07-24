@@ -130,6 +130,7 @@
     <Compile Include="Test.cs" />
     <Compile Include="TestCase.cs" />
     <Compile Include="TestClass1.cs" />
+    <Compile Include="Tests\Reserves.cs" />
     <Compile Include="Utilities\BrowserUtility.cs" />
   </ItemGroup>
   <ItemGroup>
