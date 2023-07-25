@@ -72,7 +72,7 @@ namespace RspbNewProject
                 screenshot.SaveAsFile("C:\\Users\\jeyadeepaelamaran\\source\\repos\\RspbNewProject\\RspbNewProject\\Screenshots\\Screenshots.jpeg", ScreenshotImageFormat.Jpeg);
                 Console.WriteLine(e.StackTrace);
                 throw;
-                //Tejasvi
+                
             }
             finally
             {
@@ -179,6 +179,7 @@ namespace RspbNewProject
             }
 
         }
+        //SubjectHub
         [Test, Category("Smoke Testing")]
         public void SubjectHub()
         {
@@ -188,7 +189,7 @@ namespace RspbNewProject
                 Actions action = new Actions(driver);
                 action.MoveToElement(dropdown).Perform();
                 action.MoveToElement(driver.FindElement(By.XPath("//a[normalize-space()='Subject hub']"))).Click().Perform();
-                Assert.True(driver.FindElement(By.CssSelector("h1[class='title font-superior']")).Text.Contains("Tackling climate change"));
+                //Assert.True(driver.FindElement(By.CssSelector("h1[class='title font-superior']")).Text.Contains("Tackling climate change"));
                 string content = driver.FindElement(By.CssSelector("h1[class='title font-superior']")).Text;
                 Assert.IsTrue(content.Contains("Tackling climate change"));
                 Thread.Sleep(5000);
