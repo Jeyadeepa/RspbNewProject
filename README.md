@@ -1,2 +1,2 @@
 # rspb-web-testing
-This is for Web testing team
+This is for Web testing team.
